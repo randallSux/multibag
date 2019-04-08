@@ -1,0 +1,8 @@
+1,BTC,0.00089606,9999,0,USDT
+>USDT,binance,0.001,0
+2,SWTH,5259.4,9999,0,USDT
+>NEO,switcheo,0.001125,0
+>!GAS,switcheo,0.001125,0
+>BTC,binance,0.001,0
+>USDT,binance,0.001,0
+-M1,2,1,2,60,50
