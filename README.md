@@ -49,6 +49,6 @@ Multibag statements are formatted like so:
 For each element in the multibag declaration...
 - `M<Multibag number>` is the letter M, followed by the number of your multibag. These should start with `M1` and continue with `M2`, `M3`, etc.
 - `<num bags included>` is an integer that says how many bags comprise this multibag. If your multibag contains BTC, ETH, and XMR, this field should be `3`
-- `<list of bags>` is a comma separated list of the bag identifiers that are included. In the BTC/ETH/XMR bag mentioned above, if BTC's bag number is 2, ETH's bag number is 3, and XMR's bawg number is 6, this field should be `2,3,6,`
+- `<list of bags>` is a comma separated list of the bag identifiers that are included. In the BTC/ETH/XMR bag mentioned above, if BTC's bag number is 2, ETH's bag number is 3, and XMR's bag number is 6, this field should be `2,3,6,`
 - `<target>` is just the target total value for the multibag. This value should be in the currency that each bag is calculated for. 
 - `<stoploss>` is similar to target, but its the stoploss for this multibag.
