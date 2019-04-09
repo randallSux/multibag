@@ -9,7 +9,7 @@ Easy-peasy portfolio tracker for crypto currencies. Allows you to track value in
 # Formatting bag lines
 Each bag line has two parts. The first part is the **bag declaration**. This is only one line and tells the program what coin you're holding, how much of it you're holding, and some other stuff. The SECOND part is the **bag transfer statement(s)**. Notice that "statement(s)" means you can have one, or more than one, statement. These statements tell the program how you're going to get your actual holding into your currency of choice. They explain each trade or transfer you'll make, and on which exchanges, to allow the program to give you an actual result for how much your bag will be worth after all these trades are complete. This is great, because we all hate it when coinmarketcap says your holding is worth so many satoshis, but after trading fees you end up with a completely different number. So, lets get into it.
 
-####Bag Declaration Lines
+#Bag Declaration Lines
 For **bag declarations** you'll format each line like this:
 `<bag number>,<TKR>,<Amount>,<Target>,<Stoploss>,<Target TKR>`
 **Be sure to separate each variable with commas, with no comma at the end of the line**
@@ -27,7 +27,7 @@ Lets look at the first line in bagsRawExample.txt:
 
 This line means that you are holding 0.0089606 BTC, and you are waiting for it to surpass 9999 USDT in value. Your stoploss is at 0 USDT in value. You'll be alerted if your holding goes above the target of 9999 USDT or below the stoploss of 0 USDT.
 
-####Bag Transfer Statements
+#Bag Transfer Statements
 For **bag transfer statements** you'll format each line like this:
 `>,<toTKR>,<Exchange>,<pFee>,<cFee>`
 Again, **be sure to separate each variable with commas, with no comma at the end of the line.**
@@ -40,7 +40,7 @@ Here's what each part does:
 - `<pFee>` is the percentage fee charged to perform that trade. This is expressed as a floating point decimal number. For 0.1%, use 0.001, not 0.1. The program will subtract this percentage from your holdings in its calculations
 - `<cFee>` is the constant fee charged or associated with that trade. Typically this is ued for transfers between exchanges. `cFee` will be subtracted after the trade calculation is complete, so express it as the amount in `<toTKR>` that'll be subtracted. If you have to transfer from one exchange to another, you want to include your transfer fee on the last line associated with a trade on the first exchange, rather than on the first line associated with a trade on the second exchange.
 
-####MultiBag Lines
+#MultiBag Lines
 Multibag lines describe your multibags, and are essentially portfolios. You can use Multibags to total up the value of multiple different bags, which are described above, and then set targets and stoplosses for the entire multibag. For instance, if you held BTC, ETH, and XMR, and wanted to get an alert whenever the USDT value of those holdings was above or below a certain value, you could create a bag for each holding, and then a multibag for all three together. Multibag lines are declared in bagsRaw.txt immediately after bag lines.
 
 Multibag statements are formatted like so:
